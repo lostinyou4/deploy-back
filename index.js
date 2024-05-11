@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors'
 import connect from './connect/connect.js';
+import router from './routes/router.js'
 
 const app = express()
 const PORT = 8000
@@ -21,8 +22,8 @@ app.use(cors({
 
 app.use(express.urlencoded({extended: false}))
 
-// app.use('/', router)
-// app.use('/test', router)
+app.use('/', router)
+app.use('/test', router)
 
 app.listen(PORT, () => {
     console.log('테스트 서버 실행')
