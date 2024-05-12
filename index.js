@@ -7,6 +7,7 @@ const app = express()
 const PORT = 8000
 connect()
 
+//aa
 //테스트용 cors
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*')
