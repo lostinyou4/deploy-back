@@ -29,4 +29,6 @@ app.use('/test', router)
 
 app.listen(PORT, () => {
     console.log('테스트 서버 실행!')
+    console.log('테스트 서버 실행!')
+
 })
